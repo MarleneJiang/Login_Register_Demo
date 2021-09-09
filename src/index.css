@@ -1,0 +1,53 @@
+/* ./src/index.css */
+
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+  background-image:url(https://cdn.jsdelivr.net/gh/MarleneJiang/ImgHosting/img/202109041905856.png);
+  background-attachment: fixed; 
+  background-size: cover;
+}
+@font-face {
+  font-family: 'qiantu';
+  src: url('https://cdn.jsdelivr.net/gh/MarleneJiang/ImgHosting/img/202109080849134.ttf');
+}
+.marlene-btn {
+  font-family: 'qiantu';
+  /* background-image: linear-gradient(135deg, #ffa7c1 0%, #f56692 100%); */
+}
+.marlene-bg-glass {
+  background: linear-gradient(
+          117.76deg,
+          rgba(255, 255, 255, 0.7) -7.21%,
+          rgba(255, 255, 255, 0.5) 118.08%
+  );
+  backdrop-filter: blur(8px);
+}
+.marlene-rounded-l-lg {
+  border-radius: 0.5rem;
+}
+.marlene-rounded-r-lg {
+  border-radius: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .marlene-rounded-l-lg {
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+  .marlene-rounded-r-lg {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+  }
+}
+@media (max-width: 1024px) {
+  .marlene-bg-glass-ex {
+    background: linear-gradient(
+            117.76deg,
+            rgba(255, 255, 255, 0.7) -7.21%,
+            rgba(255, 255, 255, 0.5) 118.08%
+    );
+    backdrop-filter: blur(8px);
+  }
+}
